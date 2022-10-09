@@ -2,7 +2,7 @@
 See https://github.com/niklasvh/html2canvas/issues/2881
 
 ## My Findings
-I found that `SVG1.svg` and `SVG2.svg` work on both `Chrome 106.0.5249.103 (64-bit) (Offical Build) (Windows 10)` and `Firefox 105.0.3 (64-bit) (Offical Build) (Windows 10)` while `SVG3.svg` doesn't work on the exact same browsers.
+I found that `SVG1.svg` and `SVG2.svg` work on both `Chrome 106.0.5249.103 (64-bit) (Offical Build) (Windows 10)` and `Firefox 105.0.3 (64-bit) (Offical Build) (Windows 10)` while `SVG3.svg` doesn't work on the exact same browsers. The problem in both browsers can be traced to [right here](https://github.com/niklasvh/html2canvas/blob/6020386bbeed60ad68e675fdcaa6220e292fd35a/src/render/canvas/canvas-renderer.ts#L316-L323).
 
 ## `test.html`
 The code that I am using to try to replicate the problem described in https://github.com/niklasvh/html2canvas/issues/2881.
