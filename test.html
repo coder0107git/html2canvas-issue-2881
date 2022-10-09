@@ -1,0 +1,50 @@
+<div id="svgimage"></div>
+<div id="previewImg"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script>
+    //let div = document.createElement("div");
+    //div.setAttribute("id", "svgimage");
+    let div = document.getElementById("svgimage");
+    
+    console.time("image fetching"); // For some reason when I load `SVG2.svg` it works but it throws an error when I try to load `SVG3.svg`.
+    fetch("SVG3.svg").then(response => response.text()).then(res => {
+        console.timeEnd("image fetching");
+
+        console.time("inserting image");
+        div.innerHTML = res;
+        console.timeEnd("inserting image");
+
+        return null;
+    }).then(() => {
+        console.time("modifying image css");
+
+        if ($(window).width() > 1919) {
+            $('#svgimage svg').attr('viewBox', '0 150 3000 2200');
+        } else {
+            $('#svgimage svg').attr('viewBox', '0 0 2500 1720');
+        }
+
+        $('#svgimage').css('display', 'inline-block');
+        $('#svgimage svg').css('width', '100%');
+        console.timeEnd("modifying image css");
+        
+        console.time("generate canvas image");
+        html2canvas(document.querySelector("#svgimage"), {
+            width: 650,
+            height: 550
+        }).then(function (canvas) {
+            console.timeEnd("generate canvas image");
+
+            console.time("adding image canvas to DOM");
+            document.getElementById("previewImg").appendChild(canvas);
+            console.timeEnd("adding image canvas to DOM");
+            /*$('#svgimage svg').attr('viewBox', '0 0 2000 1720');
+            $('#svgimage').css('display', 'flex');
+            $('#svgimage svg').css('width', '68%');*/
+        });
+    }).catch(e => {
+        console.error(e);
+    });
+</script>
