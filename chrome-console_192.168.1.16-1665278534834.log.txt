@@ -1,0 +1,62 @@
+test.html:13 image fetching: 46236.68896484375 ms
+test.html:16 inserting image: 6221.69091796875 ms
+test.html:29 modifying image css: 86.583984375 ms
+logger.ts:66 #1 55142ms Error loading svg data:image/svg+xml,%3Csvg%20class%3D%22productimg%22%20version%3D%221.1%22%20id%3D%22Layer_3%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3
+Logger.error @ logger.ts:66
+(anonymous) @ canvas-renderer.ts:321
+step @ tslib.es6.js:102
+(anonymous) @ tslib.es6.js:83
+rejected @ tslib.es6.js:74
+Promise.then (async)
+step @ tslib.es6.js:75
+(anonymous) @ tslib.es6.js:76
+__awaiter @ tslib.es6.js:72
+CanvasRenderer.renderNodeContent @ canvas-renderer.ts:294
+(anonymous) @ canvas-renderer.ts:143
+step @ tslib.es6.js:102
+(anonymous) @ tslib.es6.js:83
+fulfilled @ tslib.es6.js:73
+Promise.then (async)
+step @ tslib.es6.js:75
+(anonymous) @ tslib.es6.js:76
+__awaiter @ tslib.es6.js:72
+CanvasRenderer.renderNode @ canvas-renderer.ts:136
+(anonymous) @ canvas-renderer.ts:502
+step @ tslib.es6.js:102
+(anonymous) @ tslib.es6.js:83
+fulfilled @ tslib.es6.js:73
+Promise.then (async)
+step @ tslib.es6.js:75
+fulfilled @ tslib.es6.js:73
+Promise.then (async)
+step @ tslib.es6.js:75
+(anonymous) @ tslib.es6.js:76
+__awaiter @ tslib.es6.js:72
+CanvasRenderer.renderStackContent @ canvas-renderer.ts:473
+(anonymous) @ canvas-renderer.ts:132
+step @ tslib.es6.js:102
+(anonymous) @ tslib.es6.js:83
+(anonymous) @ tslib.es6.js:76
+__awaiter @ tslib.es6.js:72
+CanvasRenderer.renderStack @ canvas-renderer.ts:129
+(anonymous) @ canvas-renderer.ts:907
+step @ tslib.es6.js:102
+(anonymous) @ tslib.es6.js:83
+(anonymous) @ tslib.es6.js:76
+__awaiter @ tslib.es6.js:72
+CanvasRenderer.render @ canvas-renderer.ts:899
+(anonymous) @ index.ts:138
+step @ tslib.es6.js:102
+(anonymous) @ tslib.es6.js:83
+fulfilled @ tslib.es6.js:73
+Promise.then (async)
+step @ tslib.es6.js:75
+(anonymous) @ tslib.es6.js:76
+__awaiter @ tslib.es6.js:72
+renderElement @ index.ts:29
+html2canvas @ index.ts:20
+(anonymous) @ test.html:32
+Promise.then (async)
+(anonymous) @ test.html:20
+test.html:36 generate canvas image: 55193.380859375 ms
+test.html:39 adding image canvas to DOM: 0.1220703125 ms

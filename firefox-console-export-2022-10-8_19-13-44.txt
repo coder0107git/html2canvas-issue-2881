@@ -1,0 +1,78 @@
+DOMException: The operation was aborted. test.html:48:17
+    <anonymous> http://192.168.1.16/tests/html2canvas/test.html:48
+    (Async: promise callback)
+    <anonymous> http://192.168.1.16/tests/html2canvas/test.html:47
+This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”. test.html
+GEThttp://192.168.1.16/favicon.ico
+[HTTP/1.1 404 Not Found 0ms]
+
+image fetching: 44629ms - timer ended test.html:13:17
+inserting image: 4606ms - timer ended test.html:17:17
+modifying image css: 24ms - timer ended test.html:31:17
+#1 0ms Starting document clone with size 1536x739 scrolled to 0,0 logger.ts:25:29
+This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”. 2 document-cloner.ts:133:22
+#1 19859ms Document cloned, element located at 8,8 with size 1503.199951171875x1034.199951171875 using computed rendering logger.ts:25:29
+#1 19859ms Starting DOM parsing logger.ts:25:29
+#1 26589ms Added image data:image/svg+xml,%3Csvg%20class%3D%22productimg%22%20version%3D%221.1%22%20id%3D%22Layer_3%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D logger.ts:25:29
+#1 28368ms Starting renderer for element at 8,8 with size 650x550 logger.ts:25:29
+#1 28369ms Canvas renderer initialized (650x550) with scale 1.25 logger.ts:25:29
+#1 28390ms Error loading svg data:image/svg+xml,%3Csvg%20class%3D%22productimg%22%20version%3D%221.1%22%20id%3D%22Layer_3%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3 logger.ts:66:29
+    error logger.ts:66
+    CanvasRenderer canvas-renderer.ts:321
+    step tslib.es6.js:102
+    verb tslib.es6.js:83
+    rejected tslib.es6.js:74
+    (Async: promise callback)
+    step tslib.es6.js:75
+    __awaiter tslib.es6.js:76
+    __awaiter tslib.es6.js:72
+    renderNodeContent html2canvas.js:6817
+    CanvasRenderer canvas-renderer.ts:143
+    step tslib.es6.js:102
+    verb tslib.es6.js:83
+    fulfilled tslib.es6.js:73
+    (Async: promise callback)
+    step tslib.es6.js:75
+    __awaiter tslib.es6.js:76
+    __awaiter tslib.es6.js:72
+    renderNode html2canvas.js:6683
+    CanvasRenderer canvas-renderer.ts:502
+    step tslib.es6.js:102
+    verb tslib.es6.js:83
+    fulfilled tslib.es6.js:73
+    (Async: promise callback)
+    step tslib.es6.js:75
+    fulfilled tslib.es6.js:73
+    (Async: promise callback)
+    step tslib.es6.js:75
+    __awaiter tslib.es6.js:76
+    __awaiter tslib.es6.js:72
+    renderStackContent html2canvas.js:6986
+    CanvasRenderer canvas-renderer.ts:132
+    step tslib.es6.js:102
+    verb tslib.es6.js:83
+    __awaiter tslib.es6.js:76
+    __awaiter tslib.es6.js:72
+    renderStack html2canvas.js:6666
+    CanvasRenderer canvas-renderer.ts:907
+    step tslib.es6.js:102
+    verb tslib.es6.js:83
+    __awaiter tslib.es6.js:76
+    __awaiter tslib.es6.js:72
+    render html2canvas.js:7501
+    renderElement index.ts:138
+    step tslib.es6.js:102
+    verb tslib.es6.js:83
+    fulfilled tslib.es6.js:73
+    (Async: promise callback)
+    step tslib.es6.js:75
+    __awaiter tslib.es6.js:76
+    __awaiter tslib.es6.js:72
+    renderElement index.ts:29
+    html2canvas index.ts:20
+    <anonymous> test.html:34
+    (Async: promise callback)
+    <anonymous> test.html:20
+#1 28461ms Finished rendering logger.ts:25:29
+generate canvas image: 28460ms - timer ended test.html:38:21
+adding image canvas to DOM: 0ms - timer ended test.html:42:21
