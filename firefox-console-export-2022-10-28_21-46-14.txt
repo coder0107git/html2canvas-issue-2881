@@ -1,0 +1,23 @@
+#1 0ms Starting document clone with size 1036x739 scrolled to 0,-257.6000061035156 2.415f8471.js:21:194263
+#1 13566ms Document cloned, element located at 84,453.40000915527344 with size 868x432 using computed rendering 2.415f8471.js:21:194263
+#1 13566ms Starting DOM parsing 2.415f8471.js:21:194263
+#1 20672ms Added image data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22width%3A%20828.8px%3B%20transition%3A%20all%200s%20ease%200s%3B%20-webkit-text-stroke%3A%200px%20rgb(74%2C%2074%2C%2074)%3B%20-webkit-text-fill-color%3A%20rgb(74%2C 2.415f8471.js:21:194263
+#1 25571ms Starting renderer for element at 84,453.40000915527344 with size 868x432 2.415f8471.js:21:194263
+#1 25714ms Canvas renderer initialized (868x432) with scale 1.25 2.415f8471.js:21:194263
+#1 26913ms Error loading svg data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22width%3A%20828.8px%3B%20transition%3A%20all%200s%20ease%200s%3B%20-webkit-text-stroke%3A%200px%20rgb(74%2C%2074%2C%2074)%3B%20-webkit-text-fill-color%3A%20rgb(74%2 2.415f8471.js:21:195100
+#1 27699ms Finished rendering 2.415f8471.js:21:194263
+#2 0ms Starting document clone with size 1036x739 scrolled to 0,-257.6000061035156 2.415f8471.js:21:194263
+#2 13560ms Document cloned, element located at 84,453.40000915527344 with size 868x432 using computed rendering 2.415f8471.js:21:194263
+#2 13561ms Starting DOM parsing 2.415f8471.js:21:194263
+#2 21349ms Added image data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22width%3A%20828.8px%3B%20transition%3A%20all%200s%20ease%200s%3B%20-webkit-text-stroke%3A%200px%20rgb(74%2C%2074%2C%2074)%3B%20-webkit-text-fill-color%3A%20rgb(74%2C 2.415f8471.js:21:194263
+#2 23193ms Starting renderer for element at 84,453.40000915527344 with size 868x432 2.415f8471.js:21:194263
+#2 23203ms Canvas renderer initialized (868x432) with scale 1.25 2.415f8471.js:21:194263
+#2 23777ms Error loading svg data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22width%3A%20828.8px%3B%20transition%3A%20all%200s%20ease%200s%3B%20-webkit-text-stroke%3A%200px%20rgb(74%2C%2074%2C%2074)%3B%20-webkit-text-fill-color%3A%20rgb(74%2 2.415f8471.js:21:195100
+#2 24111ms Finished rendering 2.415f8471.js:21:194263
+#3 0ms Starting document clone with size 1036x739 scrolled to 0,-257.6000061035156 2.415f8471.js:21:194263
+#3 3494ms Document cloned, element located at 84,453.40000915527344 with size 868x432 using computed rendering 2.415f8471.js:21:194263
+#3 3495ms Starting DOM parsing 2.415f8471.js:21:194263
+#3 4492ms Added image data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22width%3A%20828.8px%3B%20transition%3A%20all%200s%20ease%200s%3B%20-webkit-text-stroke%3A%200px%20rgb(74%2C%2074%2C%2074)%3B%20-webkit-text-fill-color%3A%20rgb(74%2C 2.415f8471.js:21:194263
+#3 5034ms Starting renderer for element at 84,453.40000915527344 with size 868x432 2.415f8471.js:21:194263
+#3 5035ms Canvas renderer initialized (868x432) with scale 1.25 2.415f8471.js:21:194263
+#3 5759ms Finished rendering 2.415f8471.js:21:194263
