@@ -1,0 +1,44 @@
+<style>
+#svgimage, svg {
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    border: solid blue 4px;
+}
+</style>
+
+<div id="svgimage"></div>
+<div id="previewImg">
+    <img />
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "dom-to-image": "https://cdn.jsdelivr.net/npm/dom-to-image/+esm"
+  }
+}
+</script>
+<script type="module">
+import domtoimage from "dom-to-image";
+
+// load SVG
+fetch("https://raw.githack.com/coder0107git/html2canvas-issue-2881/main/SVG3.svg")
+.then(async response => await response.text())
+.then(async res => document.querySelector("#svgimage").innerHTML = await res)
+.then(() => {
+	domtoimage.toPng(document.querySelector("#svgimage svg"))
+    .then(dataUrl => {
+        let img = new Image();
+        img.src = dataUrl;
+        
+        document.body.appendChild(img);
+    })
+    .catch(function (error) {
+        console.error('oops, something went wrong!', error);
+    });
+}).catch(e => console.error(e.stack));
+
+</script>
