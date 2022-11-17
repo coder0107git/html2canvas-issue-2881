@@ -1,0 +1,120 @@
+<style>
+canvas {
+    border: solid maroon 4px;
+}
+
+#svgimage {
+    margin: 0;
+    padding: 0;
+}
+
+svg, img {
+    border: solid blue 4px;
+}
+</style>
+
+<div id="svgimage"></div>
+<div id="previewImg">
+    <canvas />
+    <img />
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "canvg": "https://cdn.jsdelivr.net/npm/canvg@4.0.1/+esm"
+  }
+}
+</script>
+<script type="module">
+/*import { Canvg } from "canvg";
+
+let v = null;
+
+window.onload = async () => {
+  const canvas = document.querySelector("canvas");
+  const ctx = canvas.getContext("2d");
+
+  v = await Canvg.from(ctx, "https://raw.githack.com/coder0107git/html2canvas-issue-2881/main/SVG3.svg");
+
+  // Start SVG rendering with animations and mouse handling.
+  await v.render();
+  
+  //await new Promise(r => setTimeout(r, 2000));
+  //await document.write(`<img src="${await canvas.toDataURL('image/png')}"/>`);
+};
+
+window.onbeforeunload = () => {
+  v.stop();
+};*/
+</script>
+<script type="module">
+import {
+  Canvg //, presets
+} from "canvg";
+
+// the following function is modified from https://stackoverflow.com/a/70166417
+async function svgElemToString(svg) {
+    const newUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
+    newUse.setAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
+    newUse.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#foo");
+
+    await svg.append(newUse);
+    
+    return await new XMLSerializer().serializeToString(svg);
+}
+
+//const preset = presets.offscreen();
+
+let v = null;
+
+async function toPng(data) {
+  const {
+    width,
+    height,
+    svg
+  } = data;
+  //const canvas = new OffscreenCanvas(width, height);
+  const canvas = document.querySelector("canvas");
+  if(width && height) {
+    console.log(width, height);
+    
+  	canvas.style.width = width;
+  	canvas.style.height = height;
+  }
+  
+  const ctx = canvas.getContext("2d");
+  v = await Canvg.fromString(ctx, svg /*, preset*/);
+
+  // Render only first frame, ignoring animations and mouse.
+  await v.start();
+  
+  await new Promise(r => setTimeout(r, 3000));
+  
+  await v.stop();
+  
+  /*return await canvas.toBlob(blob => {
+  	return URL.createObjectURL(blob);
+  });*/
+  return await null;
+}
+
+// load SVG
+fetch("https://raw.githack.com/coder0107git/html2canvas-issue-2881/main/SVG2.svg")
+.then(async response => await response.text())
+.then(async res => document.querySelector("#svgimage").innerHTML = await res)
+.then(async () => {
+	await toPng({
+        width: 650,
+        height: 550,
+        svg: await svgElemToString(document.querySelector("#svgimage svg")),
+    }).then((pngUrl) => {
+      	console.log(pngUrl);
+		
+      	//const img = document.querySelector("#previewImg img");
+		
+      	//img.src = pngUrl;
+    });
+}).catch(e => console.error(e.stack));
+
+</script>
